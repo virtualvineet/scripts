@@ -1,0 +1,13 @@
+[random-readers]
+;output=RD_128K_Seq_Read.txt 
+ioengine=libaio 
+direct=1 
+;norandommap 
+randrepeat=0 
+blocksize=4K 
+rw=randread 
+iodepth=128 
+filename=/dev/nvme0n1 
+numjobs=1
+size=128m
+
